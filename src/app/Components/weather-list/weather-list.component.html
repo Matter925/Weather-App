@@ -18,17 +18,25 @@
   <button class="btn btn-primary mx-2 my-3" (click)="sortWeatherList('city')">
     Sort By City
   </button>
-  <button class="btn btn-primary mx-2 my-3" (click)="sortWeatherList('temperture')">
+  <button
+    class="btn btn-primary mx-2 my-3"
+    (click)="sortWeatherList('temperture')"
+  >
     Sort By temperture
   </button>
-  <ul class="list-group">
+  
+  <div class="row">
     @for(cityweather of filteredWeatherList;track cityweather.id) {
-    <button
-      class="list-group-item btn btn-block btn-success"
-      (click)="navegatToWeather(cityweather.temperture)"
-    >
-      {{ cityweather.city }} : {{ cityweather.temperture }} °C
-    </button>
+      <div class="col-md-4 mt-3" style="text-decoration: none; cursor: pointer;" (click)="navegatToWeather(cityweather.temperture)">
+        <div class="card" [ngClass]="getTemperatureColor(cityweather.temperture)">
+          <div class="card-body">
+            <h5 class="card-title">{{ cityweather.city }}</h5>
+            <p class="card-text">Temperature: {{ cityweather.temperture }} °C</p>
+            <!-- Add more weather details here as needed -->
+          </div>
+        </div>
+      </div>
+   
     }
-  </ul>
+  </div>
 </div>
