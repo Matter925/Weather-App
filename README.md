@@ -1,6 +1,6 @@
 # Weather-App
 
-## Development server
+##  In Development
 
 ![Screenshot 2024-04-25 174242](https://github.com/Matter925/Weather-App/assets/84684863/87f68277-d0d9-4e8a-b6a2-92f2b31f61e7)
 
