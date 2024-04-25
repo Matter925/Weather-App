@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+body {
+    /* Set background image */
+    background-image: url('./assets/background.jpg');
+    /* Set background size and other properties */
+    background-size: cover; /* Adjust to cover the entire body */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    background-attachment: fixed; /* Fixed position */
+    /* Optionally, set background color */
+    background-color: #f8f8f8; /* Fallback color if the image is not available */
+  }
